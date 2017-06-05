@@ -14,6 +14,7 @@ html {
 
 body {
   background-attachment: fixed;
+  background-color: #ACACAC;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,7 +330,6 @@ body {
   line-height: 1.3333333;
   padding: 10px 16px;
   color: #fff;
-  height: 60px;
   width: 100%;
 }
 
@@ -400,7 +400,7 @@ body {
 .phonefactor_container,
 .self_asserted_container,
 .unified_container {
-  padding-top: 80px;
+  padding-top: 180px;
 }
 
 .phoneNumber .type {
@@ -645,4 +645,8 @@ body {
   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
   -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important;
+}
+
+.panel-body h1 {
+  margin-bottom: 45px;
 }
