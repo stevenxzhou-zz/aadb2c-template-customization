@@ -26,35 +26,10 @@ body {
     background-color: #f2f2f2;
   }
 
-  .divider h2 {    
-    margin: 10px 0 !important;
-  }
-
   .login-logo {
     height: 80px !important;
     margin-top: -65px !important;
   }
-}
-
-::-moz-placeholder {
-  color: transparent;
-}
-
-::-moz-placeholder {
-  color: transparent;
-}
-
-:-ms-input-placeholder {
-  color: transparent;
-}
-
-::-webkit-input-placeholder {
-  color: transparent;
-}
-
-label,
-.password-label {
-  margin-top: 10px;
 }
 
 #AdfsExchange {
@@ -99,30 +74,6 @@ label,
 
 #email_ver_input {
   margin-bottom: 10px 0;
-}
-
-#FacebookExchange {
-  background-color: #3B5595;
-  background-image: url("../images/facebook.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  padding-left: 55px;
-}
-
-#FacebookExchange:hover {
-    background-color: #354C86
-}
-
-#forgotPassword {
-  clear: right;
-  cursor: pointer;
-  float: right;
-  margin-top: 10px;
-  transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -webkit-transition: 0.5s all;
 }
 
 #GoogleExchange {
@@ -407,54 +358,6 @@ label,
   }
 }
 
-.create p {
-  text-align: center;
-}
-
-.divider {
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  text-shadow: 0 1px 0 #fff;
-}
-
-.divider h2 {
-  color: #ccc;
-  line-height: 20px;
-  margin: 20px 0;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.divider h2:after,
-.divider h2:before {
-  content: "";
-  height: 1px;
-  position: absolute;
-  top: 10px;
-  width: 40%;
-}
-
-.divider h2:after {
-  background: rgb(126,126,126);
-  background: linear-gradient(left, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -moz-linear-gradient(left, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -ms-linear-gradient(left, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -o-linear-gradient(left, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -webkit-linear-gradient(left, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  right: 0;
-}
-
-.divider h2:before {
-  background: rgb(126,126,126);
-  background: linear-gradient(right, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -moz-linear-gradient(right, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -ms-linear-gradient(right, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -o-linear-gradient(right, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  background: -webkit-linear-gradient(right, rgba(126,126,126,1) 0%, rgba(255,255,255,1) 100%);
-  left: 0;
-}
-
 .entry .buttons button {
   background-color: #337ab7;
   border-bottom: 5px solid #204d74;
@@ -506,10 +409,6 @@ label,
 }
 
 .intro {
-  display: none;
-}
-
-.localAccount .divider {
   display: none;
 }
 
@@ -681,4 +580,57 @@ label,
     -o-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
   }
+}
+
+
+/** Steven's New Added Changes **/
+.divider {
+  display: none;
+}
+
+.entry .entry-item {
+  width: 49%;
+  display: inline-block;
+}
+
+.entry .entry-item:nth-child(2) {
+  float: right;
+}
+
+.entry .entry-item label{
+  display: none;
+}
+
+.entry .password-label label {
+  display: none;
+}
+
+.create p {
+  text-align: left;
+}
+
+.password-label {
+  text-align: left;
+}
+
+#forgotPassword {
+  clear: right;
+  cursor: pointer;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+}
+
+#FacebookExchange {
+  background-color: #3B5595;
+  background-image: url("../images/facebook.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-left: 55px;
+}
+
+#FacebookExchange:hover {
+    background-color: #354C86
 }
