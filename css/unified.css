@@ -1,0 +1,447 @@
+html {
+  background: none;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: #ACACAC;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+
+#createAccount{
+  cursor: pointer;
+  padding-left:2px;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+}
+
+.accountButton:hover {
+  border: none
+}
+
+.buttons button {
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: inherit;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 6px 12px;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: inherit;
+  -moz-user-select: none;
+  -ms-touch-action: manipulation;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.entry .buttons button {
+  background-color: #0078D7;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  padding: 10px 16px;
+  color: #fff;
+  width: 100%;
+}
+
+.entry .buttons button:hover {
+  background-color: #286090;
+  border-color: #204d74;
+  color: #fff;
+}
+
+.highlightError {
+  border-color: #a94442 !important;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+}
+
+
+
+/********************************/
+/** Steven's New Added Changes **/
+/********************************/
+
+/** UI Baseline Updates **/
+.intro {
+  display: none;
+}
+
+.divider {
+  display: none;
+}
+
+.entry .entry-item label {
+  display: none;
+}
+
+.entry .password-label label {
+  display: none;
+}
+
+.create .password-label label {
+  display: none;
+}
+
+/** Input boxes **/
+.entry .entry-item {
+  width: 49%;
+  display: inline-block;
+}
+
+.entry .entry-item:nth-child(2) {
+  float: right;
+}
+
+.localAccount {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+
+/** UI Baseline Box Size Updates **/
+
+#api {
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.panel-default {
+  border: 1px solid #ccc !important;
+}
+
+.panel .panel-body{
+  padding: 15px 30px;
+}
+
+.phonefactor_container,
+.self_asserted_container,
+.unified_container {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+.col-md-offset-3 {
+  margin: 0 auto;
+  float: none;
+}
+
+.col-md-offset-2 {
+  margin: 0 auto;
+  float: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.companyLogo img {
+    width: 80px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
+.companyLogo h1 {
+  font-size: 24px;
+} 
+
+/** Labels **/
+
+.password-label {
+  position: absolute;
+  text-align: left;
+  top: 165px;
+  height: 0px;
+  left: 0px;
+}
+
+.create p {
+  text-align: left;
+}
+
+#forgotPassword {
+  clear: right;
+  cursor: pointer;
+  transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+}
+
+/** Socials **/
+.social {
+  position: absolute;
+  top: 240px;
+  width: 100%;
+}
+
+/** ************* **/
+/** Style Changes **/
+/** ************* **/
+
+/** Socials **/
+#FacebookExchange {
+  background-color: #3B5595;
+  background-image: url("../images/facebook.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
+  background-size: 15px;
+  background-position-x: 110px;
+  background-position-y: 8px;
+  margin-bottom: 20px;
+  text-indent: 20px;
+}
+
+#FacebookExchange:hover {
+    background-color: #354C86
+}
+
+#GoogleExchange {
+  background-color: #C64A29;
+  background-image: url("../images/google.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
+  background-size: 24px;
+  background-position-x: 106px;
+  background-position-y: 10px;
+  margin-bottom: 20px;
+}
+
+#GoogleExchange:hover {
+  background-color: #C14325;
+}
+
+#TwitterExchange {
+  background-color: #1DA1F2;
+  background-image: url("../images/twitter.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
+  background-size: 24px;
+  background-position-x: 106px;
+  background-position-y: 14px;
+  margin-bottom: 20px;
+  text-indent: -5px;
+}
+
+#TwitterExchange:hover {
+  background-color: #28B1E6;
+}
+
+#AdfsExchange {
+  background-color: #28B1E6;
+  background-image: url("../images/activedirectory.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  margin: 10px 0;
+  padding-left: 55px;
+}
+
+#AdfsExchange:hover {
+  background-color: #189DCF;
+}
+
+#IdentifyServerExchange {
+  background-color: #28B1E6;
+  background-image: url("../images/wingtipcorp.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  margin-top: 10px;
+  padding-left: 55px;
+}
+
+#IdentifyServerExchange:hover {
+  background-color: #189DCF;
+}
+
+#MicrosoftAccountExchange {
+  background-color: #28B1E6;
+  background-image: url("../images/microsoft.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-left: 55px;
+}
+
+#MicrosoftAccountExchange:hover {
+  background-color: #189DCF;
+}
+
+#SignUpWithLogonEmailExchange {
+  background-color: #ff5c62;
+  background-image: url("../images/wingtiptoys.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  color: #fff;
+  margin-top: 10px;
+  padding-left: 55px;
+}
+
+#SignUpWithLogonEmailExchange:hover{
+  background-image: url("../images/wingtiptoys.png") !important;
+}
+
+.buttons{
+  margin: 15px 0 23px 0;
+}
+
+.accountButton {
+  border: none;
+  border-radius: 2px;
+  color: whitesmoke;
+  font-size: larger;
+  height: 45px;
+  width: 284px;
+}
+
+#logonIdentifier,
+#password,
+#signInName {
+  background-color: #fff !important;
+  background-image: none !important;
+  border: 1px solid #ccc;
+  border-radius: 2px !important;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  line-height: 1.42857143;
+  padding: 6px 12px;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+  width: 100% !important;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075) !important;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important;
+}
+
+/** Ipad to Web **/
+@media (min-width: 768px) {
+  .row .col-md-6 {
+    width: 900px;
+  }
+  .panel-default {
+    height: 750px;
+  }
+  .panel-body .companyName {
+    margin-top: 90px;
+    font-size: 48px;
+    margin-bottom: 45px;
+  }
+}
+
+/** Phone to Ipad **/
+@media (max-width: 768px) {
+  .row .col-md-6 {
+    width: 700px;
+  }
+  .panel-default {
+    height: 650px;
+  }
+  .panel-body .companyName {
+    margin-top: 60px;
+    font-size: 48px;
+    margin-bottom: 45px;
+  }
+}
+
+/** Phone **/
+@media (max-width: 480px) {
+  .row .col-md-6 {
+    width: 380px;
+  }
+  .panel-default {
+    height: 550px;
+  }
+  
+  .social #FacebookExchange {
+    background-size: 12px;
+    background-position-x: 60px;
+    background-position-y: 8px;
+    margin-bottom: 10px;
+  }
+
+  .social #GoogleExchange {
+    background-size: 20px;
+    background-position-x: 56px;
+    background-position-y: 10px;
+    margin-bottom: 10px;
+  }
+
+  .social #TwitterExchange {
+    background-size: 20px;
+    background-position-x: 56px;
+    background-position-y: 14px;
+    margin-bottom: 10px;
+  }
+
+  .options .accountButton {
+    height: 40px;
+  }
+
+  .row .panel .panel-body{
+    padding: 15px 10px;
+  }
+
+  .panel-body #api {
+    width: 325px;
+  }
+
+  .localAccount #logonIdentifier {
+    height: 40px;
+  }
+
+  .localAccount #password {
+    height: 40px;
+  }
+
+  .localAccount .entry .entry-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .localAccount .entry .entry-item:nth-child(2) {
+    width: 230px;
+    float: left;
+  }
+
+  .buttons #next {
+    width: 87px;
+    height: 40px;
+    line-height: 0px;
+    position: relative;
+    bottom: 5px;
+    left: 8px;
+  }
+  
+  .localAccount .password-label {
+    top: 145px;
+  }
+
+  #api .social {
+    top: 210px;
+  }
+}

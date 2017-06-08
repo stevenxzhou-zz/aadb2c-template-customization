@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
             crossorigin="anonymous"></script>
-    <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <link href="../css/unified.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container unified_container">
@@ -24,6 +24,68 @@
                 <h1 class="text-center">Sign In</h1>
               </div>
               <div id="api" data-name="Unified">
+                <div class="social" role="form">
+                  <div class="intro">
+                    <h2>Sign in with your social account</h2>
+                  </div>
+                  <div class="options">
+                    <div>
+                      <button class="accountButton firstButton" id="FacebookExchange" tabindex="1">Sign in with Facebook</button>
+                    </div>
+                    <div>
+                      <button class="accountButton" id="GoogleExchange" tabindex="1">Sign in with Google</button>
+                    </div>
+                    <div>
+                      <button class="accountButton" id="TwitterExchange" tabindex="1">Sign in with Twitter</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="divider">
+                  <h2>OR</h2>
+                </div>
+                <div class="localAccount" role="form">
+                  <div class="intro">
+                    <h2>
+                      Sign in with your existing account
+                    </h2>
+                  </div>
+                  <div class="error pageLevel" aria-hidden="true" style="display: none;">
+                    <p role="alert"></p>
+                  </div>
+                  <div class="entry">
+                    <div class="entry-item">
+                      <label for="logonIdentifier">
+                        Email Address
+                      </label>
+                      <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                        <p role="alert"></p>
+                      </div>
+                      <input type="email" id="logonIdentifier" name="Username or email address" pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Email Address" value="" tabindex="1">
+                    </div>
+                    <div class="entry-item">
+                      <div class="password-label">
+                        <label for="password">Password</label>
+                        <a id="forgotPassword" tabindex="2" href="/stevenzhou.onmicrosoft.com/B2C_1_TestSignInSignUp01/api/CombinedSigninAndSignup/forgotPassword?csrf_token=V1ZnSDZMOE5LKyt4dXZTaThWQitwQkZiV0JuQUp1Q2prb3ZTaGZUcTMwa0JTZzJXMFFZYlY0dWJPTzJXdGEvZmsrbnA2dVJRbEdseEt2ZHJYdUF6UHc9PTsyMDE3LTA2LTA2VDAwOjI4OjIwLjA4MTI2OTRaO0ZpRldnUUY0WERqNWxQMVBHMThRWlE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=eyJUSUQiOiIxMTRkYjgwYy0xZDQ3LTQyNmYtYmI0Yy01NGZkYTQ2ODUxMzMifQ&amp;p=B2C_1_TestSignInSignUp01">Forgot your password?</a>
+                      </div>
+                      <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                        <p role="alert"></p>
+                      </div>
+                      <input type="password" id="password" name="Password" placeholder="Password" tabindex="1">
+                    </div>
+                    <div class="working"></div>
+                    <div class="buttons">
+                      <button id="next" tabindex="1">Sign in</button>
+                    </div>
+                  </div>
+                  <div class="divider">
+                    <h2>OR</h2>
+                  </div>
+                  <div class="create">
+                    <p>
+                      Don't have an account?<a id="createAccount" tabindex="1" href="/stevenzhou.onmicrosoft.com/B2C_1_TestSignInSignUp01/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=V1ZnSDZMOE5LKyt4dXZTaThWQitwQkZiV0JuQUp1Q2prb3ZTaGZUcTMwa0JTZzJXMFFZYlY0dWJPTzJXdGEvZmsrbnA2dVJRbEdseEt2ZHJYdUF6UHc9PTsyMDE3LTA2LTA2VDAwOjI4OjIwLjA4MTI2OTRaO0ZpRldnUUY0WERqNWxQMVBHMThRWlE9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=eyJUSUQiOiIxMTRkYjgwYy0xZDQ3LTQyNmYtYmI0Yy01NGZkYTQ2ODUxMzMifQ&amp;p=B2C_1_TestSignInSignUp01">Sign up now</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
