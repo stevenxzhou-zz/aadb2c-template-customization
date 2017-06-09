@@ -1,0 +1,112 @@
+
+.container {
+    background-color: red;
+    height: 20px;
+}
+
+.row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    .panel-default {
+        width: 900px;
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .panel-body {
+            width: 450px;
+            margin: 0 auto;
+            .branding {
+                img {
+                    display: none;
+                }
+                h1 {
+                    font-size: 43px;
+                    color: #505050;
+                }
+            }
+            h3 {
+                font-size: 28px;
+                color: #505050;
+                margin-top: 5px;
+                margin-bottom: 30px;
+            }
+            .intro {
+                display: none;
+            }
+        }
+    }
+}
+
+#attributeList {
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            label {
+                display: none;
+            }
+            input {
+                height: 50px;
+                width: 100%;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 2px solid #D3D3D3;
+                text-indent: 20px;
+            }
+            input::-webkit-input-placeholder {
+                text-indent: 20px;
+            }
+            .attrEntry {
+                .itemLevel {
+                    display: none;
+                }
+                #email_ver_but_send {
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 15px; 
+                    border: 2px solid #0078D7;
+                    background: none;
+                    color: #0078D7;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+            }
+            .helpLink {
+                display: none;
+            }
+        }
+    }
+}
+
+.buttons {
+    #continue {
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        background-color: #0078D7;
+        opacity: .3;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+    #cancel {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background: none;
+        border: 0;
+        font-size: 21px;
+        color: #505050;
+    }
+    #cancel:before {
+        content: url("../images/left-arrow.svg");
+        padding: 10px;
+        vertical-align: middle;
+        zoom: 90%;
+    }
+}
