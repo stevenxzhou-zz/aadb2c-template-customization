@@ -1,7 +1,7 @@
 .self_asserted_container .row .panel-default .panel-body {
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 450px; }
   .self_asserted_container .row .panel-default .panel-body .branding img {
     display: none; }
@@ -9,10 +9,10 @@
     font-size: 43px;
     color: #505050; }
   .self_asserted_container .row .panel-default .panel-body h3 {
-    font-size: 28px;
+    font-size: 24px;
     color: #505050;
     margin-top: 5px;
-    margin-bottom: 30px; }
+    margin-bottom: 90px; }
   .self_asserted_container .row .panel-default .panel-body .intro {
     display: none; }
   .self_asserted_container .row .panel-default .panel-body #api #attributeVerification .pageLevel, .self_asserted_container .row .panel-default .panel-body #api #attributeVerification .error {
@@ -35,33 +35,8 @@
     #attributeList ul li input::-webkit-input-placeholder {
       text-indent: 20px; }
     #attributeList ul li .attrEntry .verify {
+      display: none;
       position: relative; }
-      #attributeList ul li .attrEntry .verify #email_ver_but_send {
-        width: 100%;
-        height: 50px;
-        margin-bottom: 15px;
-        border: 2px solid #0078D7;
-        background: none;
-        color: #0078D7;
-        border-radius: 5px;
-        font-size: 18px; }
-      #attributeList ul li .attrEntry .verify #email_ver_but_verify {
-        width: 65%;
-        height: 50px;
-        margin-bottom: 15px;
-        border: 2px solid #0078D7;
-        background: none;
-        color: #0078D7;
-        border-radius: 5px;
-        font-size: 18px; }
-      #attributeList ul li .attrEntry .verify #email_ver_but_resend {
-        background: none;
-        border: 0;
-        color: #0078D7;
-        font-size: 18px;
-        position: absolute;
-        right: 0;
-        bottom: 13px; }
     #attributeList ul li .attrEntry .itemLevel {
       display: none; }
     #attributeList ul li .helpLink {
@@ -94,30 +69,26 @@
   zoom: 90%; }
 
 @media screen and (max-width: 480px) {
-  .row .panel-default .panel-body .branding img {
-    display: block;
-    height: 80px;
-    width: 95px;
-    margin: 0 auto; }
-  .row .panel-default .panel-body .branding h1 {
-    display: none; }
-  .row .panel-default .panel-body h3 {
-    font-size: 20px;
-    margin-top: 15px; }
-  #attributeVerification #attributeList ul li input {
+  .self_asserted_container .row .panel-default {
+    height: 550px; }
+    .self_asserted_container .row .panel-default .panel-body {
+      margin-top: 40px; }
+      .self_asserted_container .row .panel-default .panel-body .branding h1 {
+        display: block;
+        font-size: 28px; }
+      .self_asserted_container .row .panel-default .panel-body h3 {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 45px; }
+  .self_asserted_container #attributeVerification #attributeList ul li input {
     height: 40px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 2px solid #D3D3D3;
     text-indent: 10px; }
-  #attributeVerification #attributeList ul li input::-webkit-input-placeholder {
+  .self_asserted_container #attributeVerification #attributeList ul li input::-webkit-input-placeholder {
     text-indent: 10px; }
-  #attributeVerification #attributeList ul li #email {
-    width: 70%;
-    float: left;
-    position: relative;
-    z-index: 2; }
-  #attributeVerification #attributeList ul li #email_ver_but_verify {
+  .self_asserted_container #attributeVerification #attributeList ul li #email_ver_but_verify {
     background: none;
     border: 0;
     color: #0078D7;
@@ -129,22 +100,16 @@
     width: 80px;
     z-index: 1;
     top: -2px; }
-  #attributeVerification #attributeList ul li #email_ver_input {
+  .self_asserted_container #attributeVerification #attributeList ul li #email_ver_input {
     width: 60%; }
-  #attributeVerification #attributeList ul li #email_ver_but_resend {
+  .self_asserted_container #attributeVerification #attributeList ul li #email_ver_but_resend {
     bottom: 5px;
     font-size: 13px; }
-  .buttons #continue {
+  .self_asserted_container .buttons #continue {
     height: 40px; }
-  .buttons #cancel {
+  .self_asserted_container .buttons #cancel {
     font-size: 15px;
     left: 13px; } }
-
-@media screen and (max-width: 480px) {
-  .self_asserted_container .row .panel-default {
-    height: 550px; }
-    .self_asserted_container .row .panel-default .panel-body {
-      margin-top: 40px; } }
 
 html {
   background: none; }

@@ -29,8 +29,8 @@ $errorMessageColor: #d30000;
         .panel-default {
             .panel-body {
                 margin: 0 auto;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 50px;
+                margin-bottom: 50px;
                 max-width: 450px;
                 .branding {
                     img {
@@ -42,10 +42,10 @@ $errorMessageColor: #d30000;
                     }
                 }
                 h3 {
-                    font-size: 28px;
+                    font-size: 24px;
                     color: $lightGrayColor;
                     margin-top: 5px;
-                    margin-bottom: 30px;
+                    margin-bottom: 90px;
                 }
                 .intro {
                     display: none;
@@ -85,24 +85,8 @@ $errorMessageColor: #d30000;
             }
             .attrEntry {
                 .verify {
+                    display: none;
                     position: relative;
-                    #email_ver_but_send {
-                        width: 100%;
-                        height: 50px;
-                        @include email_ver_but_style;
-                    }
-                    #email_ver_but_verify {
-                        width: 65%;
-                        height: 50px;
-                        @include email_ver_but_style;
-                    }
-                    #email_ver_but_resend {
-                        @include clear_but_style;
-                        @include email_ver_text_style;
-                        position: absolute;
-                        right: 0;
-                        bottom: 13px;
-                    }
                 }
                 .itemLevel {
                     display: none;
@@ -146,23 +130,23 @@ $errorMessageColor: #d30000;
 
 // Responsive Styles
 @media screen and (max-width: 480px) {
+.self_asserted_container {
     .row {
         .panel-default {
+            height: 550px;
             .panel-body {
+                margin-top: 40px;
                 .branding {
-                    img {
-                        display: block;
-                        height: 80px;
-                        width: 95px;
-                        margin: 0 auto;
-                    }
                     h1 {
-                        display: none;
+                        display: block;
+                        font-size: 28px;
                     }
+                    
                 }
                 h3 {
-                    font-size: 20px;
+                    font-size: 24px;
                     margin-top: 15px;
+                    margin-bottom: 45px;
                 }
             }
         }
@@ -181,12 +165,6 @@ $errorMessageColor: #d30000;
                     }
                     input::-webkit-input-placeholder {
                         text-indent: 10px;
-                    }
-                    #email {
-                        width: 70%;
-                        float: left;
-                        position: relative;
-                        z-index: 2;
                     }
                     #email_ver_but_verify {
                         @include clear_but_style();
@@ -221,19 +199,4 @@ $errorMessageColor: #d30000;
         }
     }
 }
-
-
-// Responsive Styles
-@media screen and (max-width: 480px) {
-    .self_asserted_container {
-        .row {
-            .panel-default {
-                height: 550px;
-                .panel-body {
-                    margin-top: 40px;
-                }
-            } 
-        }
-    } 
-    
 }
