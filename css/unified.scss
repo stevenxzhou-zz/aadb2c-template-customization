@@ -30,16 +30,18 @@ body {
         }
         .companyLogo {
           display: none;
-          img {
-            width: 80px;
-            height: 70px;
-            margin: 0 auto;
-            display: block;
-          }
-          h1 {
-            font-size: 24px;
-          } 
         }
+        img {
+          width: 80px;
+          height: 70px;
+          margin: 0 auto;
+          display: block;
+        }
+        h3 {
+          font-size: 24px;
+          display: none;
+        } 
+      }
 
         #api {
           
@@ -177,7 +179,6 @@ body {
       }
     }
   }
-}
 
 #FacebookExchange {
   background-color: #3B5595;
@@ -297,6 +298,9 @@ body {
           .companyLogo {
             display: block;
           }
+          h3 {
+            display: block;
+          }
           #api {
             width: 325px;
             .social {
@@ -328,6 +332,7 @@ body {
             }
 
             .localAccount {
+              top: 20px;
               .entry {
                 .entry-item {
                   display: block;
