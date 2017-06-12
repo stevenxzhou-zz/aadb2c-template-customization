@@ -1,42 +1,23 @@
-.container {
-  text-align: center;
-  width: 100%;
-  display: table;
-  height: 100vh;
-  margin-top: 2%; }
-
-.col-lg-6 {
-  float: none;
-  display: inline-block;
-  padding: 0; }
-
-.row {
-  width: 100%;
-  margin: 0;
-  display: table-cell;
-  vertical-align: middle; }
-  .row .panel-default {
-    width: 100%; }
-    .row .panel-default .panel-body {
-      margin: 0 auto;
-      max-width: 450px;
-      margin-top: 20px;
-      margin-bottom: 20px; }
-      .row .panel-default .panel-body .branding img {
-        display: none; }
-      .row .panel-default .panel-body .branding h1 {
-        font-size: 43px;
-        color: #505050; }
-      .row .panel-default .panel-body h3 {
-        font-size: 28px;
-        color: #505050;
-        margin-top: 5px;
-        margin-bottom: 30px; }
-      .row .panel-default .panel-body .intro {
-        display: none; }
-      .row .panel-default .panel-body #api #attributeVerification .pageLevel, .row .panel-default .panel-body #api #attributeVerification .error {
-        color: #d30000;
-        margin-bottom: 10px; }
+.self_asserted_container .row .panel-default .panel-body {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 450px; }
+  .self_asserted_container .row .panel-default .panel-body .branding img {
+    display: none; }
+  .self_asserted_container .row .panel-default .panel-body .branding h1 {
+    font-size: 43px;
+    color: #505050; }
+  .self_asserted_container .row .panel-default .panel-body h3 {
+    font-size: 28px;
+    color: #505050;
+    margin-top: 5px;
+    margin-bottom: 30px; }
+  .self_asserted_container .row .panel-default .panel-body .intro {
+    display: none; }
+  .self_asserted_container .row .panel-default .panel-body #api #attributeVerification .pageLevel, .self_asserted_container .row .panel-default .panel-body #api #attributeVerification .error {
+    color: #d30000;
+    margin-bottom: 10px; }
 
 #attributeList ul {
   padding: 0; }
@@ -124,7 +105,6 @@
     font-size: 20px;
     margin-top: 15px; }
   #attributeVerification #attributeList ul li input {
-    width: 280px;
     height: 40px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -160,6 +140,311 @@
     font-size: 15px;
     left: 13px; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .self_asserted_container .row .panel-default {
+    height: 550px; }
+    .self_asserted_container .row .panel-default .panel-body {
+      margin-top: 40px; } }
+
+html {
+  background: none; }
+
+body {
+  background-attachment: fixed;
+  background-color: #ACACAC;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left; }
+
+.container {
+  width: 100%; }
+
+.unified_container .row .panel-default {
+  height: 750px; }
+  .unified_container .row .panel-default .panel-body {
+    padding: 15px 30px;
+    max-width: 520px;
+    margin: 0 auto; }
+    .unified_container .row .panel-default .panel-body .companyName {
+      margin-top: 90px;
+      font-size: 48px;
+      margin-bottom: 45px; }
+    .unified_container .row .panel-default .panel-body .companyLogo {
+      display: none; }
+      .unified_container .row .panel-default .panel-body .companyLogo img {
+        width: 80px;
+        height: 70px;
+        margin: 0 auto;
+        display: block; }
+      .unified_container .row .panel-default .panel-body .companyLogo h1 {
+        font-size: 24px; }
+    .unified_container .row .panel-default .panel-body #api .intro {
+      display: none; }
+    .unified_container .row .panel-default .panel-body #api .divider {
+      display: none; }
+    .unified_container .row .panel-default .panel-body #api .localAccount {
+      top: 10px;
+      width: 100%;
+      position: relative; }
+      .unified_container .row .panel-default .panel-body #api .localAccount .entry .buttons {
+        margin: 15px 0 23px 0; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .buttons button {
+          background-image: none;
+          background-color: #204d74;
+          border: 1px solid transparent;
+          border-radius: 4px;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 18px;
+          font-weight: 400;
+          height: inherit;
+          line-height: 1.3333333;
+          margin: 0;
+          padding: 10px 16px;
+          text-align: center;
+          touch-action: manipulation;
+          user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+          width: inherit;
+          -moz-user-select: none;
+          -ms-touch-action: manipulation;
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          color: #fff;
+          width: 100%; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .buttons button:hover {
+          background-color: #286090;
+          border-color: #204d74;
+          color: #fff; }
+      .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item {
+        width: 49.5%;
+        display: inline-block; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item label {
+          display: none; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #logonIdentifier,
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #password {
+          background-color: #fff !important;
+          background-image: none !important;
+          border: 1px solid #ccc;
+          border-radius: 2px !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+          color: #555;
+          display: block;
+          font-size: 14px;
+          height: 50px;
+          line-height: 1.42857143;
+          padding: 6px 12px;
+          transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+          width: 100% !important;
+          -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s !important;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+          -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s !important; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item .password-label {
+          position: absolute;
+          text-align: left;
+          top: 165px;
+          height: 0px;
+          left: 0px; }
+          .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item .password-label #forgotPassword {
+            clear: right;
+            cursor: pointer;
+            transition: 0.5s all;
+            -moz-transition: 0.5s all;
+            -ms-transition: 0.5s all;
+            -o-transition: 0.5s all;
+            -webkit-transition: 0.5s all; }
+      .unified_container .row .panel-default .panel-body #api .localAccount .create p {
+        text-align: left; }
+      .unified_container .row .panel-default .panel-body #api .localAccount .create #createAccount {
+        cursor: pointer;
+        padding-left: 2px;
+        transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -webkit-transition: 0.5s all; }
+    .unified_container .row .panel-default .panel-body #api .social {
+      position: absolute;
+      top: 440px;
+      width: 450px; }
+      .unified_container .row .panel-default .panel-body #api .social .accountButton {
+        border: none;
+        border-radius: 2px;
+        color: whitesmoke;
+        font-size: larger;
+        height: 45px;
+        width: 100%; }
+      .unified_container .row .panel-default .panel-body #api .social .accountButton:hover {
+        border: none; }
+
+#FacebookExchange {
+  background-color: #3B5595;
+  background-image: url("../images/facebook.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
+  background-size: 15px;
+  background-position-x: 110px;
+  background-position-y: 8px;
+  margin-bottom: 20px;
+  text-indent: 20px; }
+
+#FacebookExchange:hover {
+  background-color: #354C86; }
+
+#GoogleExchange {
+  background-color: #C64A29;
+  background-image: url("../images/google.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
+  background-size: 24px;
+  background-position-x: 106px;
+  background-position-y: 10px;
+  margin-bottom: 20px; }
+
+#GoogleExchange:hover {
+  background-color: #C14325; }
+
+#TwitterExchange {
+  background-color: #1DA1F2;
+  background-image: url("../images/twitter.svg");
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
+  background-size: 24px;
+  background-position-x: 106px;
+  background-position-y: 14px;
+  margin-bottom: 20px;
+  text-indent: -5px; }
+
+#TwitterExchange:hover {
+  background-color: #28B1E6; }
+
+#AdfsExchange {
+  background-color: #28B1E6;
+  background-image: url("../images/activedirectory.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  margin: 10px 0;
+  padding-left: 55px; }
+
+#AdfsExchange:hover {
+  background-color: #189DCF; }
+
+#IdentifyServerExchange {
+  background-color: #28B1E6;
+  background-image: url("../images/wingtipcorp.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  margin-top: 10px;
+  padding-left: 55px; }
+
+#IdentifyServerExchange:hover {
+  background-color: #189DCF; }
+
+#MicrosoftAccountExchange {
+  background-color: #28B1E6;
+  background-image: url("../images/microsoft.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-left: 55px; }
+
+#MicrosoftAccountExchange:hover {
+  background-color: #189DCF; }
+
+#SignUpWithLogonEmailExchange {
+  background-color: #ff5c62;
+  background-image: url("../images/wingtiptoys.png");
+  background-repeat: no-repeat;
+  background-size: 50px;
+  color: #fff;
+  margin-top: 10px;
+  padding-left: 55px; }
+
+#SignUpWithLogonEmailExchange:hover {
+  background-image: url("../images/wingtiptoys.png") !important; }
+
+/** Phone **/
+@media (max-width: 480px) {
+  .unified_container .row .panel-default {
+    height: 550px; }
+    .unified_container .row .panel-default .panel-body {
+      padding: 15px 10px;
+      margin-top: 20px; }
+      .unified_container .row .panel-default .panel-body .companyName {
+        display: none; }
+      .unified_container .row .panel-default .panel-body .companyLogo {
+        display: block; }
+      .unified_container .row .panel-default .panel-body #api {
+        width: 325px; }
+        .unified_container .row .panel-default .panel-body #api .social {
+          top: 370px;
+          width: 325px; }
+          .unified_container .row .panel-default .panel-body #api .social .options .accountButton {
+            height: 40px; }
+          .unified_container .row .panel-default .panel-body #api .social .options #FacebookExchange {
+            background-size: 12px;
+            background-position-x: 60px;
+            background-position-y: 8px;
+            margin-bottom: 10px; }
+          .unified_container .row .panel-default .panel-body #api .social .options #GoogleExchange {
+            background-size: 20px;
+            background-position-x: 56px;
+            background-position-y: 10px;
+            margin-bottom: 10px; }
+          .unified_container .row .panel-default .panel-body #api .social .options #TwitterExchange {
+            background-size: 20px;
+            background-position-x: 56px;
+            background-position-y: 14px;
+            margin-bottom: 10px; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item {
+          display: block;
+          width: 100%;
+          margin-bottom: 10px; }
+          .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item .password-label {
+            top: 145px; }
+          .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #logonIdentifier {
+            height: 40px; }
+          .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item #password {
+            height: 40px; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .entry-item:nth-child(2) {
+          width: 230px;
+          float: left; }
+        .unified_container .row .panel-default .panel-body #api .localAccount .entry .buttons #next {
+          width: 78px;
+          text-indent: -4px;
+          height: 40px;
+          line-height: 0px;
+          position: relative;
+          bottom: 5px;
+          left: 8px; } }
+
+.container {
+  text-align: center;
+  width: 100%;
+  display: table;
+  height: 100vh; }
+
+#api {
+  margin: 0 auto; }
+
+.col-lg-6 {
+  float: none;
+  display: inline-block;
+  padding: 0; }
+
+.row {
+  width: 100%;
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle; }
+
+.panel-default {
+  min-width: 350px; }
+
+@media (min-width: 480px) {
   .row .panel-default {
-    min-width: 550px; } }
+    min-width: 780px; } }

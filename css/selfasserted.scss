@@ -24,61 +24,45 @@ $errorMessageColor: #d30000;
 }
 
 // Styles
-.container {
-    text-align: center;
-    width: 100%;
-    display: table;
-    height: 100vh;
-    margin-top: 2%;
-}
-
-.col-lg-6 {
-    float: none;
-    display: inline-block;
-    padding: 0;
-}
-
-.row {
-    width: 100%;
-    margin: 0;
-    display: table-cell;
-    vertical-align: middle;
-    .panel-default {
-        width: 100%;
-        .panel-body {
-            margin: 0 auto;
-            max-width: 450px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            .branding {
-                img {
+.self_asserted_container {
+    .row {
+        .panel-default {
+            .panel-body {
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                max-width: 450px;
+                .branding {
+                    img {
+                        display: none;
+                    }
+                    h1 {
+                        font-size: 43px;
+                        color: $lightGrayColor;
+                    }
+                }
+                h3 {
+                    font-size: 28px;
+                    color: $lightGrayColor;
+                    margin-top: 5px;
+                    margin-bottom: 30px;
+                }
+                .intro {
                     display: none;
                 }
-                h1 {
-                    font-size: 43px;
-                    color: $lightGrayColor;
-                }
-            }
-            h3 {
-                font-size: 28px;
-                color: $lightGrayColor;
-                margin-top: 5px;
-                margin-bottom: 30px;
-            }
-            .intro {
-                display: none;
-            }
-            #api {
-                #attributeVerification {
-                    .pageLevel, .error {
-                        color: $errorMessageColor;
-                        margin-bottom: 10px;
+                #api {
+                    #attributeVerification {
+                        .pageLevel, .error {
+                            color: $errorMessageColor;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
 #attributeList {
     ul {
@@ -189,7 +173,6 @@ $errorMessageColor: #d30000;
             ul {
                 li {
                     input {
-                        width: 280px;
                         height: 40px;
                         margin-bottom: 10px;
                         border-radius: 5px;
@@ -241,10 +224,16 @@ $errorMessageColor: #d30000;
 
 
 // Responsive Styles
-@media screen and (min-width: 480px) {
-    .row {
-        .panel-default {
-            min-width: 550px;
+@media screen and (max-width: 480px) {
+    .self_asserted_container {
+        .row {
+            .panel-default {
+                height: 550px;
+                .panel-body {
+                    margin-top: 40px;
+                }
+            } 
         }
-    }
+    } 
+    
 }
