@@ -1,0 +1,210 @@
+// Variables 
+$blueColor: #0078D7;
+$lightGrayColor: #505050;
+$errorMessageColor: #d30000;
+$superLightGrayColor: #DDDDDD;
+
+// Functions
+@mixin email_ver_but_style(){
+    margin-bottom: 15px; 
+    border: 2px solid $blueColor;
+    background: none;
+    color: $blueColor;
+    border-radius: 5px;
+    font-size: 18px;
+};
+
+@mixin light_grey_input_style(){
+    border: 2px solid $superLightGrayColor;
+    border-radius: 5px;
+    text-indent: 10px;
+};
+
+@mixin clear_but_style() {
+    background: none;
+    border: 0;
+}
+
+@mixin email_ver_text_style() {
+    color: $blueColor;
+    font-size: 18px;
+}
+
+// Styles
+.phonefactor_container {
+    .row {
+        .panel-default {
+            .panel-body {
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                max-width: 480px;
+                height: 500px;
+                .companyName {
+                    font-size: 43px;
+                    color: $lightGrayColor;
+                }
+                .companyLogo {
+                    display: none;
+                }
+                h3 {
+                    font-size: 24px;
+                    color: $lightGrayColor;
+                    margin-top: 15px;
+                    margin-bottom: 70px;
+                }
+                .intro {
+                    display: none;
+                }
+                #api {
+                    width: 450px;
+                    .phoneEntry {
+                        width: 450px;
+                        text-align: center;
+                        label {
+                            display: none;
+                        }
+                        #countryCode, #number {
+                            @include light_grey_input_style();
+                            height: 50px;
+                            width: 100%;
+                        }
+                        .code {
+                            width: 170px;
+                            display: inline-block;
+                            float: left;
+                        }
+                        .number {
+                            width: 264px;
+                            display: inline-block;
+                            float: right;
+                            .itemLevel p {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .phoneEntry:after, .buttons:after {
+                        content: " ";
+                        display: block;
+                        clear: both;
+                    }
+                    #codeVerification {
+                        position: absolute;
+                        top: 400px;
+                        #verificationCode {
+                            @include light_grey_input_style();
+                            height: 50px;
+                            width: 450px;
+                        }
+                        .actionLabel {
+                            label {
+                                display: none;
+                            }
+                            #retryCode {
+                                @include email_ver_text_style();
+                                cursor: pointer;
+                                position: absolute;
+                                bottom:-50px;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                    .buttons {
+                        text-align: center;
+                        margin-top: 30px;
+                        #verifyCode, #verifyPhone {
+                            @include clear_but_style();
+                            @include email_ver_but_style();
+                            width: 48%;
+                            height: 50px;
+                        }
+                        #verifyCode {
+                            float: left;
+                        }
+                        #verifyPhone {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// Responsive Styles
+@media screen and (max-width: 480px) {
+    .phonefactor_container {
+        .row {
+            .panel-default {
+                height: 550px;
+                .panel-body {
+                    margin-top: 40px;
+                    .companyName {
+                        display: block;
+                        font-size: 28px;
+                    }
+                    h3 {
+                        font-size: 24px;
+                        margin-top: 15px;
+                        margin-bottom: 45px;
+                    }
+
+                    #api {
+                        width: 330px;
+                        .phoneEntry {
+                            text-align: center;
+                            width: 330px;
+                            label {
+                                display: none;
+                            }
+                            #countryCode, #number {
+                                @include light_grey_input_style();
+                                height: 40px;
+                                width: 100%;
+                            }
+                            .code {
+                                width: 125px;
+                                display: inline-block;
+                                float: left;
+                            }
+                            .number {
+                                width: 190px;
+                                display: inline-block;
+                                float: right;
+                                .itemLevel p {
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        #codeVerification {
+                            position: absolute;
+                            top: 350px;
+                            #verificationCode {
+                                @include light_grey_input_style();
+                                height: 40px;
+                                width: 330px;
+                            }
+                        }
+
+                        .buttons {
+                            text-align: center;
+                            margin-top: 30px;
+                            #verifyCode, #verifyPhone {
+                                height: 40px;
+                            }
+                            #cancel {
+                                font-size: 15px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,18 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- TODO: favicon -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://stevenzhou.blob.core.windows.net/b2c/wingtip/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="css/main-2.0.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container phonefactor_container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="col-lg-6">
           <div class="panel panel-default">
             <div class="panel-body">
-              <div class="text-center">
-                <img alt="Wingtip Toys" class="login-logo" src="http://stevenzhou.blob.core.windows.net/b2c/wingtip/images/logo.png" />
-              </div>
-              <h3 class="text-center">Verify your Wingtip Toys account</h3>
+              <h1 class="text-center companyName">Your Company Name</h1>
+              <img class="companyLogo" src="images/logo.png">
+              <h3 class="text-center">Verify your account</h3>
               <div id="api" data-name="Phonefactor">
                 <div class="intro">
                   <p>Enter a number below that we can send a code via SMS or phone to authenticate you.</p>
@@ -44,7 +43,7 @@
                         <div class="readonly"></div>  
                       </div>
 
-                  <div id="codeVerification" style="display:none" aria-hidden="true">
+                  <div id="codeVerification" style="display:block" aria-hidden="true">
                       <div class="actionLabel">
                           <label for="verificationCode">Enter your verification code below, or </label>
                           <a id="retryCode" tabindex="1">send a new code</a>

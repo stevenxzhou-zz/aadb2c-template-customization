@@ -399,6 +399,141 @@ body {
         .unified_container .row .panel-default .panel-body #api .localAccount .create p {
           text-align: left; } }
 
+.phonefactor_container .row .panel-default .panel-body {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 480px;
+  height: 500px; }
+  .phonefactor_container .row .panel-default .panel-body .companyName {
+    font-size: 43px;
+    color: #505050; }
+  .phonefactor_container .row .panel-default .panel-body .companyLogo {
+    display: none; }
+  .phonefactor_container .row .panel-default .panel-body h3 {
+    font-size: 24px;
+    color: #505050;
+    margin-top: 15px;
+    margin-bottom: 70px; }
+  .phonefactor_container .row .panel-default .panel-body .intro {
+    display: none; }
+  .phonefactor_container .row .panel-default .panel-body #api {
+    width: 450px; }
+    .phonefactor_container .row .panel-default .panel-body #api .phoneEntry {
+      width: 450px;
+      text-align: center; }
+      .phonefactor_container .row .panel-default .panel-body #api .phoneEntry label {
+        display: none; }
+      .phonefactor_container .row .panel-default .panel-body #api .phoneEntry #countryCode, .phonefactor_container .row .panel-default .panel-body #api .phoneEntry #number {
+        border: 2px solid #DDDDDD;
+        border-radius: 5px;
+        text-indent: 10px;
+        height: 50px;
+        width: 100%; }
+      .phonefactor_container .row .panel-default .panel-body #api .phoneEntry .code {
+        width: 170px;
+        display: inline-block;
+        float: left; }
+      .phonefactor_container .row .panel-default .panel-body #api .phoneEntry .number {
+        width: 264px;
+        display: inline-block;
+        float: right; }
+        .phonefactor_container .row .panel-default .panel-body #api .phoneEntry .number .itemLevel p {
+          margin: 0; }
+    .phonefactor_container .row .panel-default .panel-body #api .phoneEntry:after, .phonefactor_container .row .panel-default .panel-body #api .buttons:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .phonefactor_container .row .panel-default .panel-body #api #codeVerification {
+      position: absolute;
+      top: 400px; }
+      .phonefactor_container .row .panel-default .panel-body #api #codeVerification #verificationCode {
+        border: 2px solid #DDDDDD;
+        border-radius: 5px;
+        text-indent: 10px;
+        height: 50px;
+        width: 450px; }
+      .phonefactor_container .row .panel-default .panel-body #api #codeVerification .actionLabel label {
+        display: none; }
+      .phonefactor_container .row .panel-default .panel-body #api #codeVerification .actionLabel #retryCode {
+        color: #0078D7;
+        font-size: 18px;
+        cursor: pointer;
+        position: absolute;
+        bottom: -50px;
+        transform: translateX(-50%); }
+    .phonefactor_container .row .panel-default .panel-body #api .buttons {
+      text-align: center;
+      margin-top: 30px; }
+      .phonefactor_container .row .panel-default .panel-body #api .buttons #verifyCode, .phonefactor_container .row .panel-default .panel-body #api .buttons #verifyPhone {
+        background: none;
+        border: 0;
+        margin-bottom: 15px;
+        border: 2px solid #0078D7;
+        background: none;
+        color: #0078D7;
+        border-radius: 5px;
+        font-size: 18px;
+        width: 48%;
+        height: 50px; }
+      .phonefactor_container .row .panel-default .panel-body #api .buttons #verifyCode {
+        float: left; }
+      .phonefactor_container .row .panel-default .panel-body #api .buttons #verifyPhone {
+        float: right; }
+
+@media screen and (max-width: 480px) {
+  .phonefactor_container .row .panel-default {
+    height: 550px; }
+    .phonefactor_container .row .panel-default .panel-body {
+      margin-top: 40px; }
+      .phonefactor_container .row .panel-default .panel-body .companyName {
+        display: block;
+        font-size: 28px; }
+      .phonefactor_container .row .panel-default .panel-body h3 {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 45px; }
+      .phonefactor_container .row .panel-default .panel-body #api {
+        width: 330px; }
+        .phonefactor_container .row .panel-default .panel-body #api .phoneEntry {
+          text-align: center;
+          width: 330px; }
+          .phonefactor_container .row .panel-default .panel-body #api .phoneEntry label {
+            display: none; }
+          .phonefactor_container .row .panel-default .panel-body #api .phoneEntry #countryCode, .phonefactor_container .row .panel-default .panel-body #api .phoneEntry #number {
+            border: 2px solid #DDDDDD;
+            border-radius: 5px;
+            text-indent: 10px;
+            height: 40px;
+            width: 100%; }
+          .phonefactor_container .row .panel-default .panel-body #api .phoneEntry .code {
+            width: 125px;
+            display: inline-block;
+            float: left; }
+          .phonefactor_container .row .panel-default .panel-body #api .phoneEntry .number {
+            width: 190px;
+            display: inline-block;
+            float: right; }
+            .phonefactor_container .row .panel-default .panel-body #api .phoneEntry .number .itemLevel p {
+              margin: 0; }
+        .phonefactor_container .row .panel-default .panel-body #api #codeVerification {
+          position: absolute;
+          top: 350px; }
+          .phonefactor_container .row .panel-default .panel-body #api #codeVerification #verificationCode {
+            border: 2px solid #DDDDDD;
+            border-radius: 5px;
+            text-indent: 10px;
+            height: 40px;
+            width: 330px; }
+        .phonefactor_container .row .panel-default .panel-body #api .buttons {
+          text-align: center;
+          margin-top: 30px; }
+          .phonefactor_container .row .panel-default .panel-body #api .buttons #verifyCode, .phonefactor_container .row .panel-default .panel-body #api .buttons #verifyPhone {
+            height: 40px; }
+          .phonefactor_container .row .panel-default .panel-body #api .buttons #cancel {
+            font-size: 15px;
+            left: 0; } }
+
 .container {
   text-align: center;
   width: 100%;
