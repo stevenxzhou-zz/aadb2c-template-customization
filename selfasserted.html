@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- TODO: favicon -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/main-2.0.css" rel="stylesheet" type="text/css" />
+    <link href="https://stevenzhou.blob.core.windows.net/b2c/css/main-2.0.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container self_asserted_container">
@@ -16,89 +16,11 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <div class="branding">
-                <img alt="Wingtip Toys" class="login-logo" src="images/logo.png" />
+                <img alt="Wingtip Toys" class="login-logo" src="https://stevenzhou.blob.core.windows.net/b2c/images/logo.png" />
                 <h1 class="login-text text-center">Your Company Name</h1>
               </div>
               <h3 class="text-center">Sign up</h3>
               <div id="api" data-name="SelfAsserted" style="">
-                <div class="intro">
-                  <p>Please provide the following details.</p>
-                </div>
-                <div id="attributeVerification" role="form">
-                  <div class="error pageLevel" id="passwordEntryMismatch" style="display: none;" aria-hidden="true">The password entry fields do not match. Please enter the same password in both fields and try again.</div>
-                  <div class="error pageLevel" id="requiredFieldMissing" style="display: none;" aria-hidden="true">A required field is missing. Please fill out all required fields and try again.</div> 
-                  <div class="error pageLevel" id="fieldIncorrect" style="display: none;" aria-hidden="true">One or more fields are filled out incorrectly. Please check your entries and try again.</div>
-                  <div class="error pageLevel" id="claimVerificationServerError" style="display: none;" aria-hidden="true"></div>
-                  <div class="attr" id="attributeList">
-                    <ul>
-                      <li>
-                        <div class="attrEntry">
-                          <div>
-                            <div class="verificationInfoText" id="email_intro" style="display: inline;" aria-hidden="false" role="alert" aria-live="polite"></div>
-                            <div class="verificationInfoText" id="email_info" style="display:none" aria-hidden="true"></div>
-                            <div class="verificationSuccessText" id="email_success" style="display:none" aria-hidden="true"></div>
-                            <div class="verificationErrorText error" id="email_fail_retry" style="display:none" aria-hidden="true">That code is incorrect. Please try again.</div>
-                            <div class="verificationErrorText error" id="email_fail_no_retry" style="display:none" aria-hidden="true">You've made too many incorrect attempts. Please try again later.</div>
-                            <div class="verificationErrorText error" id="email_fail_throttled" style="display:none" aria-hidden="true">There have been too many requests to verify this email address. Please wait a while, then try again.</div>
-                            <div class="verificationErrorText error" id="email_fail_server" style="display:none" aria-hidden="true">We are having trouble verifying your email address. Please enter a valid email address and try again.</div>
-                            <div class="verificationErrorText error" id="email_incorrect_format" style="display:none" aria-hidden="true"></div>
-                          </div>
-                          <label for="email">Email Address</label>
-                          <div class="error itemLevel" aria-hidden="true"><p role="alert" aria-live="polite">Please enter a valid email address.</p></div>
-                          <input id="email" class="textInput" type="text" placeholder="Email" pattern="^[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$" title="Email address that can be used to contact you." required="" aria-required="true">
-                          <a href="javascript:void(0)" data-help="Email address that can be used to contact you." class="helpLink tiny">What is this?</a>
-                          <div class="buttons verify" claim_id="email">
-                            <div id="email_ver_wait" class="working" aria-hidden="true" style="display: none;"></div>
-                            <label id="email_ver_input_label" for="email_ver_input" aria-hidden="true" style="display: none;">Verification code</label>
-                            <input id="email_ver_input" placeholder="Verification code" type="text" style="display:block" aria-hidden="true">
-                            <button id="email_ver_but_send" class="sendButton" type="button" style="display: none;" aria-label="Send verification code" aria-hidden="false">Send verification code</button>
-                            <button id="email_ver_but_verify" class="verifyButton" type="button" style="display:block" aria-label="Verify code" aria-hidden="true">Verify code</button>
-                            <button id="email_ver_but_resend" class="sendButton" type="button" style="display:block" aria-label="Send new code" aria-hidden="true">Send new code</button>
-                              <button id="email_ver_but_edit" class="editButton" type="button" style="display:none" aria-label="Change e-mail" aria-hidden="true">Change e-mail</button>
-                            <button id="email_ver_but_default" class="defaultButton" type="button" style="display:none" aria-label="Default">Default</button>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="attrEntry">
-                          <label for="newPassword">New Password</label>
-                          <div class="error itemLevel" aria-hidden="false"><p role="alert" aria-live="polite">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } | \ : ' , ? / ` ~ " ( ) ; .</p></div>
-                          <input id="newPassword" class="textInput" type="password" placeholder="New Password" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*\d)|(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])|(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9])|(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]))([A-Za-z\d@#$%^&amp;*\-_+=[\]{}|\\:',?/`~&quot;();!]|\.(?!@)){8,16}$" title="Enter new password" required="" aria-required="true">
-                          <a href="javascript:void(0)" data-help="Enter new password" class="helpLink tiny">What is this?</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="attrEntry">
-                          <label for="reenterPassword">Confirm New Password</label>
-                          <div class="error itemLevel" aria-hidden="true"><p role="alert" aria-live="polite">8-16 characters, containing 3 out of 4 of the following: Lowercase characters, uppercase characters, digits (0-9), and one or more of the following symbols: @ # $ % ^ &amp; * - _ + = [ ] { } | \ : ' , ? / ` ~ " ( ) ; .</p></div>
-                          <input id="reenterPassword" class="textInput" type="password" placeholder="Confirm New Password" pattern="^((?=.*[a-z])(?=.*[A-Z])(?=.*\d)|(?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])|(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9])|(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]))([A-Za-z\d@#$%^&amp;*\-_+=[\]{}|\\:',?/`~&quot;();!]|\.(?!@)){8,16}$" title="Confirm new password" required="" aria-required="true">
-                          <a href="javascript:void(0)" data-help="Confirm new password" class="helpLink tiny">What is this?</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="attrEntry">
-                          <label for="displayName">Display Name</label>
-                          <input id="displayName" class="textInput" type="text" placeholder="Display Name" title="Your display name.">
-                          <a href="javascript:void(0)" data-help="Your display name." class="helpLink tiny">What is this?</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="attrEntry">
-                          <label for="givenName">Given Name</label>
-                          <input id="givenName" class="textInput" type="text" placeholder="Given Name" title="Your given name (also known as first name).">
-                          <a href="javascript:void(0)" data-help="Your given name (also known as first name)." class="helpLink tiny">What is this?</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="buttons">
-                    <button id="continue" disabled="" aria-label="Create">Create</button>
-                    <button id="cancel" aria-label="Cancel" formnovalidate="">Cancel</button>
-                  </div>
-                  <div class="verifying-modal">
-                    <div id="verifying_blurb"></div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
