@@ -18,6 +18,8 @@
   .self_asserted_container .row .panel-default .panel-body #api #attributeVerification .pageLevel, .self_asserted_container .row .panel-default .panel-body #api #attributeVerification .error {
     color: #d30000;
     margin-bottom: 10px; }
+  .self_asserted_container .row .panel-default .panel-body #api .verifying-modal {
+    margin-top: 10px; }
 
 #attributeList ul {
   padding: 0; }
@@ -62,14 +64,16 @@
         font-size: 18px;
         position: absolute;
         right: 0;
-        bottom: 25px; }
+        bottom: -38px; }
       #attributeList ul li .attrEntry .verify #email_ver_but_edit {
+        margin-bottom: 15px;
+        border: 2px solid #0078D7;
         background: none;
-        border: 0;
         color: #0078D7;
+        border-radius: 5px;
         font-size: 18px;
         width: 100%;
-        margin-bottom: 15px; }
+        height: 50px; }
       #attributeList ul li .attrEntry .verify #email_ver_input_label {
         display: none !important; }
     #attributeList ul li .attrEntry .itemLevel {
@@ -89,7 +93,15 @@
   font-size: 18px; }
 
 .buttons #continue {
-  opacity: 1; }
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  background-color: #0078D7;
+  opacity: 1;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 18px; }
 
 .buttons #cancel {
   background: none;
@@ -145,15 +157,37 @@
     z-index: 1;
     height: 20px; }
   #attributeVerification #attributeList ul li #email_ver_input {
-    width: 70%; }
+    width: 70%;
+    float: left; }
   #attributeVerification #attributeList ul li #email_ver_but_resend {
     top: 10px;
     font-size: 13px;
     height: 20px; }
   #attributeVerification #attributeList ul li .attrEntry #email {
     height: 40px; }
+  #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_send:after {
+    content: " Verify";
+    font-size: 18;
+    font-style: bold;
+    margin-left: 20px; }
   #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_send {
-    height: 40px; }
+    height: 40px;
+    width: 95px;
+    float: right;
+    overflow: hidden;
+    text-indent: -200px; }
+  #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_edit {
+    margin-bottom: 15px;
+    border: 2px solid #0078D7;
+    background: none;
+    color: #0078D7;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 30%;
+    height: 40px;
+    overflow: hidden;
+    padding-top: 6px;
+    margin-left: 10px; }
   #attributeVerification #attributeList ul li .attrEntry .verify:after {
     content: " ";
     display: block;

@@ -57,6 +57,9 @@ $errorMessageColor: #d30000;
                             margin-bottom: 10px;
                         }
                     }
+                    .verifying-modal {
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -94,6 +97,7 @@ $errorMessageColor: #d30000;
                     #email_ver_but_verify {
                         width: 65%;
                         height: 50px;
+                        float: left;
                         @include email_ver_but_style;
                     }
                     #email_ver_but_resend {
@@ -101,8 +105,16 @@ $errorMessageColor: #d30000;
                         @include email_ver_text_style;
                         position: absolute;
                         right: 0;
-                        bottom: 13px;
+                        bottom: -38px;
                     }
+                    #email_ver_but_edit {
+                        @include email_ver_but_style;
+                        width: 100%;
+                        height: 50px;
+                    }
+                    #email_ver_input_label {
+                        display: none !important;
+                    }                    
                 }
                 .itemLevel {
                     display: none;
@@ -116,12 +128,23 @@ $errorMessageColor: #d30000;
 }
 
 .buttons {
-    #continue {
+    #continue:disabled {
         margin: 0 auto;
         width: 100%;
         height: 50px;
         background-color: $blueColor;
         opacity: .3;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 18px;
+    }
+    #continue {
+        margin: 0 auto;
+        width: 100%;
+        height: 50px;
+        background-color: $blueColor;
+        opacity: 1;
         border-radius: 5px;
         border: none;
         color: white;
@@ -149,6 +172,7 @@ $errorMessageColor: #d30000;
     .row {
         .panel-default {
             .panel-body {
+                margin-top: 40px;
                 .branding {
                     img {
                         display: block;
@@ -183,7 +207,7 @@ $errorMessageColor: #d30000;
                         text-indent: 10px;
                     }
                     #email {
-                        width: 70%;
+                        width: 65%;
                         float: left;
                         position: relative;
                         z-index: 2;
@@ -193,21 +217,58 @@ $errorMessageColor: #d30000;
                         @include email_ver_text_style;
                         position: absolute;
                         right: 0;
-                        top: 0;
+                        top: 60px;
                         font-size: 13px;
                         width: 80px;
                         z-index: 1;
-                        top: -2px;
+                        height: 20px;
                     }
                     #email_ver_input {
-                        width: 60%;
+                        width: 70%;
+                        float: left;
                     }
                     #email_ver_but_resend {
-                        bottom: 5px;
+                        top: 10px;
                         font-size: 13px;
+                        height: 20px;
                     }
-                }
+                    .attrEntry {
+                        #email {
+                            height: 40px;
+                        }
+                        .verify {
+                            #email_ver_but_send:after {
+                                content: " Verify";
+                                font-size: 18;
+                                font-style: bold;
+                                margin-left: 20px;
+                            }
+                            #email_ver_but_send {
+                                height: 40px;
+                                width: 95px;
+                                float: right;
+                                overflow: hidden;
+                                text-indent: -200px;
+                            }
+                            #email_ver_but_edit {
+                                @include email_ver_but_style;
+                                width: 30%;
+                                height: 40px;
+                                overflow: hidden;
+                                padding-top: 6px;
+                                margin-left: 10px;
+                            }
+                        }
+                        .verify:after {
+                            content: " ";
+                            display: block;
+                            clear: both;
+                        }
+                    }
             }
+        }
+        #verifying_blurb {
+            margin-top: 15px;
         }
     }
 
@@ -221,19 +282,4 @@ $errorMessageColor: #d30000;
         }
     }
 }
-
-
-// Responsive Styles
-@media screen and (max-width: 480px) {
-    .self_asserted_container {
-        .row {
-            .panel-default {
-                height: 550px;
-                .panel-body {
-                    margin-top: 40px;
-                }
-            } 
-        }
-    } 
-    
 }
