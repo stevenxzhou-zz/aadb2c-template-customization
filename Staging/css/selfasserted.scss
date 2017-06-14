@@ -94,7 +94,6 @@ $errorMessageColor: #d30000;
                     #email_ver_but_verify {
                         width: 65%;
                         height: 50px;
-                        float: left;
                         @include email_ver_but_style;
                     }
                     #email_ver_but_resend {
@@ -102,17 +101,8 @@ $errorMessageColor: #d30000;
                         @include email_ver_text_style;
                         position: absolute;
                         right: 0;
-                        bottom: 25px;
+                        bottom: 13px;
                     }
-                    #email_ver_but_edit {
-                        @include clear_but_style;
-                        @include email_ver_text_style;
-                        width: 100%;
-                        margin-bottom: 15px;
-                    }
-                    #email_ver_input_label {
-                        display: none !important;
-                    }                    
                 }
                 .itemLevel {
                     display: none;
@@ -126,7 +116,7 @@ $errorMessageColor: #d30000;
 }
 
 .buttons {
-    #continue:disabled {
+    #continue {
         margin: 0 auto;
         width: 100%;
         height: 50px;
@@ -136,9 +126,6 @@ $errorMessageColor: #d30000;
         border: none;
         color: white;
         font-size: 18px;
-    }
-    #continue {
-        opacity: 1;
     }
     #cancel {
         @include clear_but_style;
@@ -162,7 +149,6 @@ $errorMessageColor: #d30000;
     .row {
         .panel-default {
             .panel-body {
-                margin-top: 40px;
                 .branding {
                     img {
                         display: block;
@@ -197,7 +183,7 @@ $errorMessageColor: #d30000;
                         text-indent: 10px;
                     }
                     #email {
-                        width: 65%;
+                        width: 70%;
                         float: left;
                         position: relative;
                         z-index: 2;
@@ -207,39 +193,21 @@ $errorMessageColor: #d30000;
                         @include email_ver_text_style;
                         position: absolute;
                         right: 0;
-                        top: 60px;
+                        top: 0;
                         font-size: 13px;
                         width: 80px;
                         z-index: 1;
-                        height: 20px;
+                        top: -2px;
                     }
                     #email_ver_input {
-                        width: 70%;
+                        width: 60%;
                     }
                     #email_ver_but_resend {
-                        top: 10px;
+                        bottom: 5px;
                         font-size: 13px;
-                        height: 20px;
                     }
-                    .attrEntry {
-                        #email {
-                            height: 40px;
-                        }
-                        .verify {
-                            #email_ver_but_send {
-                                height: 40px;
-                            }
-                        }
-                        .verify:after {
-                            content: " ";
-                            display: block;
-                            clear: both;
-                        }
-                    }
+                }
             }
-        }
-        #verifying_blurb {
-            margin-top: 15px;
         }
     }
 
@@ -253,4 +221,19 @@ $errorMessageColor: #d30000;
         }
     }
 }
+
+
+// Responsive Styles
+@media screen and (max-width: 480px) {
+    .self_asserted_container {
+        .row {
+            .panel-default {
+                height: 550px;
+                .panel-body {
+                    margin-top: 40px;
+                }
+            } 
+        }
+    } 
+    
 }

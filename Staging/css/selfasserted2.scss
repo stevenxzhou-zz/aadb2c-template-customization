@@ -29,8 +29,8 @@ $errorMessageColor: #d30000;
         .panel-default {
             .panel-body {
                 margin: 0 auto;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 50px;
+                margin-bottom: 50px;
                 max-width: 450px;
                 .branding {
                     img {
@@ -42,10 +42,10 @@ $errorMessageColor: #d30000;
                     }
                 }
                 h3 {
-                    font-size: 28px;
+                    font-size: 24px;
                     color: $lightGrayColor;
                     margin-top: 5px;
-                    margin-bottom: 30px;
+                    margin-bottom: 90px;
                 }
                 .intro {
                     display: none;
@@ -85,34 +85,8 @@ $errorMessageColor: #d30000;
             }
             .attrEntry {
                 .verify {
+                    display: none;
                     position: relative;
-                    #email_ver_but_send {
-                        width: 100%;
-                        height: 50px;
-                        @include email_ver_but_style;
-                    }
-                    #email_ver_but_verify {
-                        width: 65%;
-                        height: 50px;
-                        float: left;
-                        @include email_ver_but_style;
-                    }
-                    #email_ver_but_resend {
-                        @include clear_but_style;
-                        @include email_ver_text_style;
-                        position: absolute;
-                        right: 0;
-                        bottom: 25px;
-                    }
-                    #email_ver_but_edit {
-                        @include clear_but_style;
-                        @include email_ver_text_style;
-                        width: 100%;
-                        margin-bottom: 15px;
-                    }
-                    #email_ver_input_label {
-                        display: none !important;
-                    }                    
                 }
                 .itemLevel {
                     display: none;
@@ -126,7 +100,7 @@ $errorMessageColor: #d30000;
 }
 
 .buttons {
-    #continue:disabled {
+    #continue {
         margin: 0 auto;
         width: 100%;
         height: 50px;
@@ -136,9 +110,6 @@ $errorMessageColor: #d30000;
         border: none;
         color: white;
         font-size: 18px;
-    }
-    #continue {
-        opacity: 1;
     }
     #cancel {
         @include clear_but_style;
@@ -159,24 +130,23 @@ $errorMessageColor: #d30000;
 
 // Responsive Styles
 @media screen and (max-width: 480px) {
+.self_asserted_container {
     .row {
         .panel-default {
+            height: 550px;
             .panel-body {
                 margin-top: 40px;
                 .branding {
-                    img {
-                        display: block;
-                        height: 80px;
-                        width: 95px;
-                        margin: 0 auto;
-                    }
                     h1 {
-                        display: none;
+                        display: block;
+                        font-size: 28px;
                     }
+                    
                 }
                 h3 {
-                    font-size: 20px;
+                    font-size: 24px;
                     margin-top: 15px;
+                    margin-bottom: 45px;
                 }
             }
         }
@@ -196,50 +166,26 @@ $errorMessageColor: #d30000;
                     input::-webkit-input-placeholder {
                         text-indent: 10px;
                     }
-                    #email {
-                        width: 65%;
-                        float: left;
-                        position: relative;
-                        z-index: 2;
-                    }
                     #email_ver_but_verify {
                         @include clear_but_style();
                         @include email_ver_text_style;
                         position: absolute;
                         right: 0;
-                        top: 60px;
+                        top: 0;
                         font-size: 13px;
                         width: 80px;
                         z-index: 1;
-                        height: 20px;
+                        top: -2px;
                     }
                     #email_ver_input {
-                        width: 70%;
+                        width: 60%;
                     }
                     #email_ver_but_resend {
-                        top: 10px;
+                        bottom: 5px;
                         font-size: 13px;
-                        height: 20px;
                     }
-                    .attrEntry {
-                        #email {
-                            height: 40px;
-                        }
-                        .verify {
-                            #email_ver_but_send {
-                                height: 40px;
-                            }
-                        }
-                        .verify:after {
-                            content: " ";
-                            display: block;
-                            clear: both;
-                        }
-                    }
+                }
             }
-        }
-        #verifying_blurb {
-            margin-top: 15px;
         }
     }
 

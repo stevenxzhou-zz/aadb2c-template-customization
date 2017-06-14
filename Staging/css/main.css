@@ -48,7 +48,6 @@
       #attributeList ul li .attrEntry .verify #email_ver_but_verify {
         width: 65%;
         height: 50px;
-        float: left;
         margin-bottom: 15px;
         border: 2px solid #0078D7;
         background: none;
@@ -62,22 +61,13 @@
         font-size: 18px;
         position: absolute;
         right: 0;
-        bottom: 25px; }
-      #attributeList ul li .attrEntry .verify #email_ver_but_edit {
-        background: none;
-        border: 0;
-        color: #0078D7;
-        font-size: 18px;
-        width: 100%;
-        margin-bottom: 15px; }
-      #attributeList ul li .attrEntry .verify #email_ver_input_label {
-        display: none !important; }
+        bottom: 13px; }
     #attributeList ul li .attrEntry .itemLevel {
       display: none; }
     #attributeList ul li .helpLink {
       display: none; }
 
-.buttons #continue:disabled {
+.buttons #continue {
   margin: 0 auto;
   width: 100%;
   height: 50px;
@@ -87,9 +77,6 @@
   border: none;
   color: white;
   font-size: 18px; }
-
-.buttons #continue {
-  opacity: 1; }
 
 .buttons #cancel {
   background: none;
@@ -107,18 +94,16 @@
   zoom: 90%; }
 
 @media screen and (max-width: 480px) {
-  .row .panel-default .panel-body {
-    margin-top: 40px; }
-    .row .panel-default .panel-body .branding img {
-      display: block;
-      height: 80px;
-      width: 95px;
-      margin: 0 auto; }
-    .row .panel-default .panel-body .branding h1 {
-      display: none; }
-    .row .panel-default .panel-body h3 {
-      font-size: 20px;
-      margin-top: 15px; }
+  .row .panel-default .panel-body .branding img {
+    display: block;
+    height: 80px;
+    width: 95px;
+    margin: 0 auto; }
+  .row .panel-default .panel-body .branding h1 {
+    display: none; }
+  .row .panel-default .panel-body h3 {
+    font-size: 20px;
+    margin-top: 15px; }
   #attributeVerification #attributeList ul li input {
     height: 40px;
     margin-bottom: 10px;
@@ -128,7 +113,7 @@
   #attributeVerification #attributeList ul li input::-webkit-input-placeholder {
     text-indent: 10px; }
   #attributeVerification #attributeList ul li #email {
-    width: 65%;
+    width: 70%;
     float: left;
     position: relative;
     z-index: 2; }
@@ -139,32 +124,27 @@
     font-size: 18px;
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 0;
     font-size: 13px;
     width: 80px;
     z-index: 1;
-    height: 20px; }
+    top: -2px; }
   #attributeVerification #attributeList ul li #email_ver_input {
-    width: 70%; }
+    width: 60%; }
   #attributeVerification #attributeList ul li #email_ver_but_resend {
-    top: 10px;
-    font-size: 13px;
-    height: 20px; }
-  #attributeVerification #attributeList ul li .attrEntry #email {
+    bottom: 5px;
+    font-size: 13px; }
+  .buttons #continue {
     height: 40px; }
-  #attributeVerification #attributeList ul li .attrEntry .verify #email_ver_but_send {
-    height: 40px; }
-  #attributeVerification #attributeList ul li .attrEntry .verify:after {
-    content: " ";
-    display: block;
-    clear: both; }
-  #attributeVerification #attributeList #verifying_blurb {
-    margin-top: 15px; }
-  #attributeVerification .buttons #continue {
-    height: 40px; }
-  #attributeVerification .buttons #cancel {
+  .buttons #cancel {
     font-size: 15px;
     left: 13px; } }
+
+@media screen and (max-width: 480px) {
+  .self_asserted_container .row .panel-default {
+    height: 550px; }
+    .self_asserted_container .row .panel-default .panel-body {
+      margin-top: 40px; } }
 
 html {
   background: none; }
