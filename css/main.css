@@ -200,20 +200,7 @@
     font-size: 15px;
     left: 13px; } }
 
-html {
-  background: none; }
-
-body {
-  background-attachment: fixed;
-  background-color: #ACACAC;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: left; }
-
-.container {
-  width: 100%; }
-
+/** Unified Signup Signin Page Styles **/
 .unified_container .row .panel-default {
   height: 750px; }
   .unified_container .row .panel-default .panel-body {
@@ -334,16 +321,17 @@ body {
     .unified_container .row .panel-default #api .social .accountButton:hover {
       border: none; }
 
+/** Social Button Styles **/
 #FacebookExchange {
   background-color: #3B5595;
   background-image: url("../images/facebook.svg");
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  width: 100%;
   background-size: 15px;
   background-position-x: 110px;
   background-position-y: 8px;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
   text-indent: 20px; }
 
 #FacebookExchange:hover {
@@ -352,13 +340,13 @@ body {
 #GoogleExchange {
   background-color: #C64A29;
   background-image: url("../images/google.svg");
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  width: 100%;
   background-size: 24px;
   background-position-x: 106px;
   background-position-y: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%; }
 
 #GoogleExchange:hover {
   background-color: #C14325; }
@@ -366,61 +354,17 @@ body {
 #TwitterExchange {
   background-color: #1DA1F2;
   background-image: url("../images/twitter.svg");
-  background-repeat: no-repeat;
-  border-radius: 5px;
-  width: 100%;
   background-size: 24px;
   background-position-x: 106px;
   background-position-y: 14px;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  width: 100%;
   text-indent: -5px; }
 
 #TwitterExchange:hover {
   background-color: #28B1E6; }
-
-#AdfsExchange {
-  background-color: #28B1E6;
-  background-image: url("../images/activedirectory.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  margin: 10px 0;
-  padding-left: 55px; }
-
-#AdfsExchange:hover {
-  background-color: #189DCF; }
-
-#IdentifyServerExchange {
-  background-color: #28B1E6;
-  background-image: url("../images/wingtipcorp.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  margin-top: 10px;
-  padding-left: 55px; }
-
-#IdentifyServerExchange:hover {
-  background-color: #189DCF; }
-
-#MicrosoftAccountExchange {
-  background-color: #28B1E6;
-  background-image: url("../images/microsoft.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  padding-left: 55px; }
-
-#MicrosoftAccountExchange:hover {
-  background-color: #189DCF; }
-
-#SignUpWithLogonEmailExchange {
-  background-color: #ff5c62;
-  background-image: url("../images/wingtiptoys.png");
-  background-repeat: no-repeat;
-  background-size: 50px;
-  color: #fff;
-  margin-top: 10px;
-  padding-left: 55px; }
-
-#SignUpWithLogonEmailExchange:hover {
-  background-image: url("../images/wingtiptoys.png") !important; }
 
 /** Phone **/
 @media (max-width: 480px) {
@@ -480,6 +424,17 @@ body {
             position: relative;
             bottom: 5px;
             left: 8px; } }
+
+html {
+  background: none; }
+
+body {
+  background-attachment: fixed;
+  background-color: #ACACAC;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left; }
 
 .container {
   text-align: center;
